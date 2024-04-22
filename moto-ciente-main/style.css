@@ -1,0 +1,1482 @@
+/**
+ Folha de estilo do site roboticapratica.com
+ @author Thiago porfirio malagolin
+*/
+
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+/* variáveis globais */
+:root {
+    --cinzaLayout: #696969;
+    --cinzaTexto: #767676;
+    --brancoLayout: #ffffff;
+    --Card: #ffffff;
+    --bordaLayout: #a09e9e;
+    --vermelhoLayout: #ff0000;
+    --pretoLayout: #1e1c1c;
+}
+
+/* CSS RESET */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    /* Adicionado para incluir a largura e altura do elemento nos cálculos de tamanho */
+}
+
+/* LAYOUT >>>>>>>>>>>>>>>>>>>>>>>>>> */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    margin: 0;
+    /* Adicionado para garantir que o corpo não tenha margem 
+    padding: 0;
+    /* Adicionado para garantir que o corpo não tenha preenchimento */
+}
+
+section {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: -25vh;
+
+}
+.MiniBanner ul li {
+    width: 340px;
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+    font-family: sans-serif;
+}
+#txtP{
+    color: #989898;
+}
+
+
+.Container {
+    margin: 0 auto;
+    padding: 50px 15px 50px 15px;
+    margin-top: 1vh;
+}
+
+.color {
+    background-color: #808080;
+}
+
+.Flex,
+.FlexMenu {
+    display: flex;
+    justify-content: space-between;
+}
+.MiniBanner1 ul li {
+    width:350px;
+    color: rgb(0, 0, 0);
+    font-size: 1.1em;
+    font-family: sans-serif;
+    margin-left: 29px;
+}
+.conteudo-texto img{
+   width: 150px;
+   margin-left: 110px;
+}
+/* estilo pro input */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  /* compatibiliza o tamanho das caixas do box */
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  border: 1px solid #2e2e2e;
+  border-radius: 5px;
+}
+.conteudo-texto h2.txtA{
+    margin-left:85px;
+    
+}
+
+input[type="submit"],
+input[type="reset"] {
+  background-color:#bbbbbb;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.ContainerSobre {
+    margin: 0 auto;
+    padding: 50px 15px 50px 15px;
+}
+.cards-container {
+    display: flex;
+    justify-content: space-between; /* Distribui os cards igualmente */
+    flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha se necessário */
+    margin-top: 200px;
+}
+.card-image {
+    max-width: 200px;
+    height: auto;
+    margin-left: -60px;
+    border-radius: 10px;
+}
+.card p{
+    margin-left: -109px;
+    margin-top: 10px;
+    font-size: 1.1em;
+    width: 300px;
+    
+}
+.card h3{
+    margin-left: -100px;
+    margin-top: -100px;
+    width: 270px;
+}
+.card {
+    min-height: 10px; /* Defina a altura mínima conforme necessário */
+    /* Outras propriedades CSS para o card */
+    width: calc(90% - 20px); /* Define a largura do card */
+    margin-bottom: 80px; /* Adiciona margem na parte inferior dos cards */
+    padding: 120px; /* Adiciona espaço interno nos cards */
+    background-color: #dadada; /* Cor de fundo do card */
+    border-radius: 20px; /* Adiciona bordas arredondadas */
+    box-shadow: 0 0 10px rgb(0, 0, 0); /* Adiciona sombra ao card */
+    margin-left: 30px;
+}
+.card1 {
+    min-height: 10px; /* Defina a altura mínima conforme necessário */
+    width: calc(90% - 20px); /* Define a largura do card */
+    margin-bottom: 80px; /* Adiciona margem na parte inferior dos cards */
+    padding: 120px; /* Adiciona espaço interno nos cards */
+    background-color: #dadada; /* Cor de fundo do card */
+    border-radius: 20px; /* Adiciona bordas arredondadas */
+    box-shadow: 0 0 10px rgb(0, 0, 0); /* Adiciona sombra ao card */
+    margin-left: 30px;
+}
+.card1 h3{
+    margin-left: -100px;
+    margin-top: -100px;
+    width: 210px;
+}
+.card-image1 {
+    max-width: 200px;
+    height: auto;
+    margin-left: -60px;
+    border-radius: 10px;
+}
+.card1 p{
+    margin-left: -107px;
+    margin-top: 10px;
+    font-size: 1.1em;
+    width: 300px;
+    
+}
+.card2 {
+    min-height: 10px; /* Defina a altura mínima conforme necessário */
+    width: calc(90% - 20px); /* Define a largura do card */
+    margin-bottom: 80px; /* Adiciona margem na parte inferior dos cards */
+    padding: 120px; /* Adiciona espaço interno nos cards */
+    background-color: #dadada; /* Cor de fundo do card */
+    border-radius: 20px; /* Adiciona bordas arredondadas */
+    box-shadow: 0 0 10px rgb(0, 0, 0); /* Adiciona sombra ao card */
+    margin-left: 30px;
+}
+.card2 h3{
+    margin-left: -100px;
+    margin-top: -100px;
+}
+.card2 {
+    min-height: 330px; /* Defina a altura mínima conforme necessário */
+    width: calc(90% - 20px); /* Define a largura do card */
+    margin-bottom: 80px; /* Adiciona margem na parte inferior dos cards */
+    padding: 120px; /* Adiciona espaço interno nos cards */
+    background-color: #dadada; /* Cor de fundo do card */
+    border-radius: 20px; /* Adiciona bordas arredondadas */
+    box-shadow: 0 0 10px rgb(0, 0, 0); /* Adiciona sombra ao card */
+}
+.card-image2 {
+    max-width: 200px;
+    height: auto;
+    margin-left: -60px;
+    border-radius: 10px;
+}
+.card2 p{
+    margin-left: -105px;
+    margin-top: 10px;
+    font-size: 1.1em;
+    width: 300px;
+}
+.card3 {
+    min-height: 10px; /* Defina a altura mínima conforme necessário */
+    width: calc(90% - 20px); /* Define a largura do card */
+    margin-bottom: 80px; /* Adiciona margem na parte inferior dos cards */
+    padding: 120px; /* Adiciona espaço interno nos cards */
+    background-color: #dadada; /* Cor de fundo do card */
+    border-radius: 20px; /* Adiciona bordas arredondadas */
+    box-shadow: 0 0 10px rgb(0, 0, 0); /* Adiciona sombra ao card */
+    margin-left: 30px;
+}
+.card-image3 {
+    max-width: 200px;
+    height: auto;
+    margin-left: -60px;
+    border-radius: 10px;
+    margin-top: -60px;
+    margin-left: -90px;
+}
+.card3 p{
+    margin-left: -107px;
+    margin-top: 250px;
+    font-size: 1.1em;
+    width: 300px;
+}
+
+.card3 h3{
+    margin-left: -100px;
+    margin-top: -500px;
+    width: 250px;
+}
+.Flex {
+    flex-direction: column;
+}
+
+/*topo*/
+#topo {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+/*<<<<<<<<<<<<<<<<<<<< LAYOUT */
+
+
+
+/* Parte do Conteudo do Home */
+.Container-h {
+    display: flex;
+    flex-direction: column;
+    margin-top: 250px;
+    margin-bottom: 50px;
+    justify-content: space-between;
+}
+
+#conteudo {
+    position: relative; /* Definir posição relativa para que o vídeo possa ser posicionado */
+    width: 100%; /* Definir a largura para ocupar 100% do contêiner */
+    height: auto; /* Definir a altura para se ajustar automaticamente */
+    margin-top: -300px;
+}
+#conteudo video {
+    width: 100%; /* Definir a largura para ocupar 100% do contêiner */
+    height: auto; /* Definir a altura para se ajustar automaticamente */
+    position: relative; /* Definir posição relativa */
+    z-index: 1; /* Definir o índice z para garantir que o vídeo não se sobreponha a outros elementos */
+    margin-top: 95px;
+}
+
+#social {
+    margin-bottom: 25px;
+}
+
+
+.conteudo-texto h2 {
+    font-size: 1em;
+    padding: 15px 20px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    
+}
+.buttonP {
+    background-color: #000000;
+    text-align: center;
+    margin: 5px 0 0 109px;
+    width: 150px;
+    transition: .5s;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 25px;
+    padding: 3px 1px;
+    font-size: 1em;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 25px;
+}
+#imgSobre img{
+    border: 2px solid var(--pretoLayout);
+    border-radius: 50%;
+    margin-top: 150px;
+    
+}
+.FlexSobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.ContainerSobre {
+    margin: 0 auto;
+    padding: 50px 15px 50px 15px;
+}
+
+
+/* Botão do home */
+
+.button {
+    background-color: #000000;
+    text-align: center;
+    margin: 5px 0 0 109px;
+    width: 150px;
+    transition: .5s;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 19px;
+    padding: 10px 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+/* Layout */
+.MiniBorda {
+    display: flex;
+    margin-top: auto;
+    max-width: 100%;
+    background-color: #1e1c1c;
+    padding: 50px 0;
+}
+/* Banner*/
+
+.Container {
+    max-width: 100%;
+}
+#Pretxt {
+
+    font-family:inherit;
+}
+
+.Banner {
+    position: absolute;
+    display: block;
+    bottom: 440px;
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 105px;
+}
+
+.Banner .Container h1 {
+    color: var(--brancoLayout);
+    font-size: 2.7em;
+    font-family: monospace;
+
+}
+form {
+    background-color:var(--cinzaTexto);
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: rgb(156, 156, 156) 0px 3px 8px;
+    margin-top: -220px;
+  }
+  .Container9 h2{
+    margin-bottom: 230px;
+    font-size:4vh;
+    margin-left: 20px;
+   
+    
+  }
+
+main {
+    background: url(img/banner.jpg);
+    height:45vh;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.Banner .Container h1 {
+    color: var(--brancoLayout);
+    font-size: 2.7em;
+    font-family: monospace;
+    margin-top: -45px;
+}
+
+.Banner .Container h2 {
+    color: var(--brancoLayout);
+    font-size: 0.9em;
+    font-family: "Bebas Neue";
+    margin-top: 15px;
+}
+
+
+ul li {
+    padding-top: 10px;
+    /* Adiciona espaço acima de cada item da lista */
+    padding-bottom: 17px;
+    /* Adiciona espaço abaixo de cada item da lista */
+    font-family: initial;
+    font-size: 22px;
+
+}
+
+/* fim do banner*/
+header {
+    max-width: 100%;
+    /* Adicionado para ocupar toda a largura */
+    height: 80px;
+    background-color: rgb(0, 0, 0);
+}
+
+/*introduçao*/
+#intro h2 {
+    margin-bottom: 3px;
+    margin-top: 100px;
+}
+
+#intro ul li {
+    padding-left: 0px;
+    margin-left: 15px;
+}
+
+#logo img {
+    width: 60px;
+    height: 50px;
+    margin: 10px 0px 0px 10px;
+}
+
+#check {
+    display: none;
+}
+
+label {
+    font-size: 3em;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    color: rgba(255, 255, 255, 0.9);
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    background-color: rgba(0, 0, 0, 0.9);
+    height: 100vh;
+    top: 80px;
+    position: fixed;
+    right: -70%;
+    width: 70%;
+    transition: right 0.5s;
+    z-index: 2;
+}
+
+#check:checked~ul {
+    right: 0;
+}
+
+nav ul li {
+    border-bottom: 0.5px solid var(--Card);
+    text-align: right;
+    padding: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+
+
+footer {
+    background-color: var(--pretoLayout);
+    color: var(--brancoLayout);
+    text-align: center;
+    margin-top: 25px;
+}
+
+#social {
+    margin-bottom: 25px;
+}
+
+/* Smartphone landscape >>>>>>>>>>>>>>> */
+@media (min-width: 576px) {
+    .MiniBanner1 ul li {
+        width:600px;
+        color: rgb(0, 0, 0);
+        font-size: 1.1em;
+        font-family: sans-serif;
+    }
+
+    .Container {
+        max-width: 540px;
+    }
+    .conteudo-texto1 h2{
+        font-size: 1.2em;
+        margin-left: 250px;
+
+    }
+    .conteudo-texto1 img{
+        width: 200px;
+        margin-left: 230px;
+        margin-top: 5px;
+     }
+     #imgSobre img{
+        border: 2px solid var(--pretoLayout);
+        border-radius: 50%;
+        margin-top: 60px;
+        margin-right:20px;
+        
+    }
+    .cards-container {
+        display: flex;
+        justify-content: space-between; /* Distribui os cards igualmente */
+        flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha se necessário */
+        margin-top: 100px;
+    }
+    
+    .card {
+        width: calc(80% - 20px); /* Define a largura do card */
+        margin-bottom: 80px; /* Adiciona margem na parte inferior dos cards */
+        padding: 120px; /* Adiciona espaço interno nos cards */
+        background-color: #dadada; /* Cor de fundo do card */
+        border-radius: 20px; /* Adiciona bordas arredondadas */
+        box-shadow: 0 0 10px rgb(0, 0, 0); /* Adiciona sombra ao card */
+    }
+   
+    .conteudo-texto img{
+        width: 200px;
+        margin-left: 240px;
+     }
+
+    /* Botão do home */
+
+    .button {
+        margin: 5px 0 0 250px;
+    }
+    /* Estilos para a imagem */
+.MiniBanner ul li {
+    width: 570px;
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+    font-family: sans-serif;
+}
+.FlexSobre {
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    text-align: left; 
+}
+
+#SS{
+    margin-left: 100PX;
+    margin-right: 1000PX;
+} 
+main {
+    background: url(img/banner.jpg);
+    height:80vh;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+.buttonP {
+    background-color: #000000;
+    text-align: center;
+    margin: 5px 0 0 260px;
+    width: 150px;
+    transition: .5s;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 19px;
+    padding: 10px 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 25px;
+}
+
+.Flex {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+/* form */
+form {
+    background-color:var(--cinzaLayout);
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: rgb(156, 156, 156) 0px 3px 8px;
+    margin-top: -220px;
+  }
+  .Container9 h2{
+    margin-bottom: 250px;
+    font-size:7vh;
+    margin-left: 150px;
+    
+  }
+
+
+    /* Layout */
+
+    .Banner {
+        position: absolute;
+        display: block;
+        bottom: 450px;
+        background: rgba(0, 0, 0, 0.7);
+        width: 100%;
+        height: 118px;
+        margin-bottom: -270px;
+    }
+
+    .Banner .Container h1 {
+        color: var(--brancoLayout);
+        font-size: 2.7em;
+        font-family: monospace;
+        bottom: auto;
+    }
+
+    .Card img {
+        border-radius: 25px 25px 0px 0px;
+        width: 330px;
+        height: 320px;
+        margin-left: -0.1vh;
+        margin-top: 0.2vh;
+    }
+
+    /*introduçao*/
+    #intro h2 {
+        margin-bottom: 3px;
+        margin-top: 20px;
+    }
+}
+
+/* Parte do Conteudo do Home */
+.Container-h {
+    display: flex;
+    flex-direction: column;
+    margin-top: 250px;
+    margin-bottom: 50px;
+    justify-content: space-between;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: center;
+    margin-top: -220px;
+}
+
+.conteudo img {
+    width: 300px;
+    height: auto;
+    border-radius: 29px;
+}
+
+.conteudo-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+
+.conteudo-texto h2 {
+    font-size: 1em;
+    padding: 15px 20px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-family:inherit;
+    color: #151515;
+}
+
+
+
+
+
+/* Layout */
+.MiniBorda {
+    display: flex;
+    margin-top: auto;
+    max-width: 100%;
+    background-color: #1e1c1c;
+    padding: 50px 0;
+}
+.MiniBorda1  {
+    display: flex;
+    margin-top: auto;
+    max-width: 100%;
+    background-color: #999999;
+    padding: 50px 0;
+}
+.MiniBanner1 h2 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 30px;    
+    margin-bottom: 15px;
+}
+
+.MiniBanner h2 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 30px;    
+    margin-bottom: 15px;
+}
+
+
+
+.MiniBanner1 h2.chamativo {
+    background-color: rgba(0, 0, 0, 0.3); /* Cor preta com 50% de opacidade */
+    color: rgb(255, 255, 255); /* Cor do texto branco para contrastar com o fundo preto */
+    padding: 5px; /* Espaçamento interno para o texto */
+    text-align: center; /* Centralizar o texto */
+}
+
+
+
+
+
+
+/* Cabeçalho */
+header {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.Flex {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+/* Tablet portrait >>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 768px) {
+
+    /* Layout */
+    .Container {
+        max-width: 720px;
+    }
+    .MiniBanner1 ul li {
+        width:750px;
+        color: rgb(0, 0, 0);
+        font-size: 1.3em;
+        font-family:sans-serif;
+        margin-left: 29px;
+    }
+    .conteudo-texto h2{
+        font-size: 1.2em;
+     }
+    .conteudo-texto1 img{
+        width: 200px;
+        margin-left: 280px;
+        margin-top: 5px;
+     }
+     
+     .conteudo-texto1 h2{
+        font-size: 1.2em;
+        margin-left: 300px;
+     }
+     #textoSobre h2{
+        margin-left: 24px;
+        font-size: 1.5em;
+        margin-top: 200px;
+    }
+    #textoSobre p{
+        font-size: 1.3em;
+    }
+    .cards-container {
+        display: flex;
+        justify-content: space-between; /* Distribui os cards igualmente */
+        flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha se necessário */
+        margin-top: 250px;
+    }
+    
+    .card {
+        width: calc(80% - 20px); /* Define a largura do card */
+        margin-bottom: 80px; /* Adiciona margem na parte inferior dos cards */
+        padding: 120px; /* Adiciona espaço interno nos cards */
+        background-color: #dadada; /* Cor de fundo do card */
+        border-radius: 20px; /* Adiciona bordas arredondadas */
+        box-shadow: 0 0 10px rgb(0, 0, 0); /* Adiciona sombra ao card */
+    }
+    
+    form {
+        background-color:var(--cinzaTexto);
+        padding: 20px;
+        border-radius: 50px;
+        box-shadow: rgb(156, 156, 156) 0px 3px 8px;
+        margin-top: -220px;
+      }
+      .Container9 h2{
+        margin-bottom: 230px;
+        font-size:4vh;
+        margin-left: 120px; 
+      }
+      #imgSobre img{
+        border: 2px solid var(--pretoLayout);
+        border-radius: 50%;
+        margin-top: 250px;
+        
+    }
+      /* Botão do home */
+      .buttonP {
+        background-color: #000000;
+        text-align: center;
+        margin: 5px 0 0 305px;
+        width: 150px;
+        transition: .5s;
+        color: rgb(255, 255, 255);
+        border: none;
+        border-radius: 19px;
+        padding: 10px 10px;
+        font-size: 1.2em;
+        cursor: pointer;
+        text-decoration: none;
+        margin-top: 25px;
+    }
+    /*introduçao*/
+    #intro h2 {
+        margin-bottom: 3px;
+        margin-top: 130px;
+    }
+    .MiniBanner ul li {
+        width: 720px;
+        color: rgb(255, 255, 255);
+        font-size: 15px;
+        font-family: sans-serif
+    }
+    /* Parte do Conteudo do Home */
+    .Container-h {
+        display: flex;
+        flex-direction: column;
+        margin-top: 250px;
+        margin-bottom: 30px;
+        justify-content: space-between;
+    }
+    .FlexSobre {
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+    }
+    .conteudo {
+        display: flex;
+        justify-content: center;
+        margin-top: -290px;
+    }
+
+    .conteudo img {
+        width: 300px;
+        margin-top: 60px;
+        border-radius: 25px;
+    }
+
+    .conteudo-texto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+   
+
+
+    /* Cabeçalho */
+    header {
+        max-width: 100%;
+        height: 100px;
+        background-color: #000000;
+    }
+
+    .Banner .Container h1 {
+        color: var(--brancoLayout);
+        font-size: 3em;
+        font-family: monospace;
+        margin-top: -20px;
+    }
+
+    .Banner .Container h2 {
+        color: var(--brancoLayout);
+        font-size: 1.5em;
+        font-family: monospace;
+        margin-top: 15px;
+    }
+
+    .Banner {
+        position: absolute;
+        display: block;
+        bottom: 460px;
+        background: rgba(0, 0, 0, 0.7);
+        width: 100%;
+        height: 138px;
+        margin-bottom: 337px;
+    }
+
+    /* Banner */
+    main {
+        height: 40vh;
+    }
+
+
+    label {
+        font-size: 4em;
+        top: 25px;
+        right: 5px;
+    }
+
+    #logo img {
+        width: 80px;
+        height: 80px;
+        margin: 20px 0px 0px 0px;
+        margin-left: 40px;
+    }
+
+    .TextBesideImage p {
+        font-size: 16px;
+        /* Ajuste conforme necessário */
+        margin-bottom: 40px;
+        /* Espaçamento inferior */
+        font-family: inherit;
+    }
+
+    nav ul {
+        top: 100px;
+        right: -50%;
+        width: 50%;
+    }
+
+    /* Banner */
+    main h1 {
+        font-size: 1.5em;
+        font-weight: 700;
+        margin-bottom: 25px;
+    }
+
+    main h2 {
+        margin-bottom: 25px;
+    }
+}
+
+/* Tablet landscape >>>>>>>>>>>>>>>>>>> */
+@media (min-width: 992px) {
+
+    /* Layout */
+    .Container {
+        max-width: 960px;
+    }
+
+    .Banner {
+        position: absolute;
+        display: block;
+        bottom: 450px;
+        background: rgba(0, 0, 0, 0.7);
+        width:100%;
+        height: 138px;
+        margin-bottom: 80px;
+    }
+    .FlexSobre {
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+    }
+         /* Botão do home */
+         .buttonP {
+            background-color: #000000;
+            text-align: center;
+            margin: 5px 0 0 440px;
+            width: 150px;
+            transition: .5s;
+            color: rgb(255, 255, 255);
+            border: none;
+            border-radius: 19px;
+            padding: 10px 10px;
+            font-size: 1.2em;
+            cursor: pointer;
+            text-decoration: none;
+            margin-top: 25px;
+        }
+    form {
+        background-color:var(--cinzaTexto);
+        padding: 20px;
+        border-radius: 50px;
+        box-shadow: rgb(156, 156, 156) 0px 3px 8px;
+        margin-top: -220px;
+      }
+      .Container9 h2{
+        margin-bottom: 230px;
+        font-size:5vh;
+        margin-left:280px; 
+      }
+
+
+    /* Botão do home */
+
+    .button {
+        background-color: #000000;
+        text-align: center;
+        margin: 5px 0 0 150px;
+        width: 150px;
+        transition: .5s;
+        color: rgb(255, 255, 255);
+        border: none;
+        border-radius: 19px;
+        padding: 15px 20px;
+        font-size: 1.2em;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    .MiniBanner ul li {
+        width: 985px;
+        color: rgb(255, 255, 255);
+        font-size: 15px;
+        font-family: sans-serif
+    }
+
+    /* Estilos para o texto ao lado da imagem */
+    .TextBesideImage p {
+        font-size: 16px;
+        /* Ajuste conforme necessário */
+        margin-bottom: 80px;
+        /* Espaçamento inferior */
+        font-family: inherit;
+    }
+
+    /* Parte do Conteudo do Home */
+    .Container-h {
+        display: flex;
+        flex-direction: column;
+        margin-top: 250px;
+        margin-bottom: 50px;
+        justify-content: space-between;
+    }
+
+    .conteudo {
+        display: flex;
+        justify-content: center;
+        margin-top: -200px;
+    }
+
+    .conteudo img {
+        width: 300px;
+        margin-top: 10px;
+        border-radius: 30px;
+    }
+
+    .conteudo-texto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 300px;
+    }
+
+    .conteudo-texto h2 {
+        font-size: 20px;
+        padding: 15px 20px;
+        margin-top: -300px;
+        margin-bottom: 20px;
+    }
+    .conteudo-texto1 img{
+        width: 200px;
+        margin-left: 420px;
+        margin-top: 5px;
+     }
+     .conteudo-texto1 h2{
+        font-size: 1.2em;
+        margin-left: 440px;
+
+    }
+    /* Cabeçalho */
+    header {
+        max-width: 100%;
+    }
+}
+
+/* PCs ou notebooks HD >>>>>>>>>>>>>>>> */
+@media (min-width: 1200px) {
+
+    /* Parte do Conteudo do Home */
+    .Container-h {
+        display: flex;
+        flex-direction: row;
+        margin-top: 250px;
+        margin-bottom: 50px;
+
+        justify-content: space-between;
+    }
+    .MiniBorda1  {
+        display: flex;
+        margin-top: auto;
+        max-width: 100%;
+        background-color: #999999;
+        margin-bottom: 200px;
+    }
+    .conteudo-texto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+       
+    }
+    .cards-container {
+        display: flex;
+        justify-content: space-between; /* Distribui os cards igualmente */
+        flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha se necessário */
+        margin-top: 2px;
+    }
+    .card-image {
+        max-width: 240px;
+        height: auto;
+        margin-left: -100px;
+        border-radius: 10px;
+    }
+    .card p{
+        margin-left: 180px;
+        margin-top: -290px;
+        font-size: 1.3em;
+        width: auto;
+    }
+    .card h3{
+        margin-left: -100px;
+        margin-top: -100px;
+    }
+    .card {
+        min-height: 400px; /* Defina a altura mínima conforme necessário */
+        /* Outras propriedades CSS para o card */
+        width: calc(80% - 20px); /* Define a largura do card */
+        margin-bottom: 80px; /* Adiciona margem na parte inferior dos cards */
+        padding: 120px; /* Adiciona espaço interno nos cards */
+        background-color: #dadada; /* Cor de fundo do card */
+        border-radius: 20px; /* Adiciona bordas arredondadas */
+        box-shadow: 0 0 10px rgb(0, 0, 0); /* Adiciona sombra ao card */
+    }
+    .youtube-button {
+        
+        bottom: 20px;
+        transform: translateX(-50%);
+        padding: 10px 20px;
+        background-color: #ff0000;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+        transition: background-color 0.3s;
+        margin-left: 200px;
+        margin-top: 390px;
+        
+    }
+    
+    .card1 {
+        min-height: 380px; /* Defina a altura mínima conforme necessário */
+        width: calc(80% - 20px); /* Define a largura do card */
+        margin-bottom: 80px; /* Adiciona margem na parte inferior dos cards */
+        padding: 120px; /* Adiciona espaço interno nos cards */
+        background-color: #dadada; /* Cor de fundo do card */
+        border-radius: 20px; /* Adiciona bordas arredondadas */
+        box-shadow: 0 0 10px rgb(0, 0, 0); /* Adiciona sombra ao card */
+    }
+    .card1 h3{
+        margin-left: -100px;
+        margin-top: -100px;
+    }
+    .card-image1 {
+        max-width: 410px;
+        height: auto;
+        margin-left: -100px;
+        border-radius: 10px;
+    }
+    .card1 p{
+        margin-left: 320px;
+        margin-top: -260px;
+        font-size: 1.3em;
+        width: auto;
+    }
+    .card2 {
+        width: calc(80% - 20px); /* Define a largura do card */
+        margin-bottom: 80px; /* Adiciona margem na parte inferior dos cards */
+        padding: 120px; /* Adiciona espaço interno nos cards */
+        background-color: #dadada; /* Cor de fundo do card */
+        border-radius: 20px; /* Adiciona bordas arredondadas */
+        box-shadow: 0 0 10px rgb(0, 0, 0); /* Adiciona sombra ao card */
+    }
+    .card2 h3{
+        margin-left: -100px;
+        margin-top: -100px;
+    }
+    .card2 {
+        min-height: 330px; /* Defina a altura mínima conforme necessário */
+        width: calc(80% - 20px); /* Define a largura do card */
+        margin-bottom: 80px; /* Adiciona margem na parte inferior dos cards */
+        padding: 120px; /* Adiciona espaço interno nos cards */
+        background-color: #dadada; /* Cor de fundo do card */
+        border-radius: 20px; /* Adiciona bordas arredondadas */
+        box-shadow: 0 0 10px rgb(0, 0, 0); /* Adiciona sombra ao card */
+    }
+    .card-image2 {
+        max-width: 450px;
+        height: auto;
+        margin-left: -100px;
+        border-radius: 10px;
+    }
+    .card2 p{
+        margin-left: 370px;
+        margin-top: -230px;
+        font-size: 1.3em;
+        width: auto;
+    }
+    .card3 {
+        min-height: 330px; /* Defina a altura mínima conforme necessário */
+        width: calc(80% - 20px); /* Define a largura do card */
+        margin-bottom: 80px; /* Adiciona margem na parte inferior dos cards */
+        padding: 120px; /* Adiciona espaço interno nos cards */
+        background-color: #dadada; /* Cor de fundo do card */
+        border-radius: 20px; /* Adiciona bordas arredondadas */
+        box-shadow: 0 0 10px rgb(0, 0, 0); /* Adiciona sombra ao card */
+    }
+    .card-image3 {
+        max-width: 340px;
+        height: auto;
+        margin-left: -100px;
+        border-radius: 10px;
+        margin-top: -70px;
+    }
+    .card3 p{
+        margin-left: 300px;
+        margin-top: 10px;
+        font-size: 1.3em;
+        width: auto;
+    }
+    
+    .card3 h3{
+        margin-left: -99px;
+        margin-top: -280px;
+    }
+ 
+    
+    .FlexSobre {
+        flex-direction: row;
+        justify-content:space-around;
+    }
+    .conteudo-texto h2 {
+        margin-top: 5px;
+        margin-left: 510px;
+    }
+    .MiniBanner1 ul li {
+        width: 1355px;
+        color: rgb(0, 0, 0);
+        font-size: 1.7em;
+        font-family: sans-serif;
+    }
+    #conteudo {
+        position: relative; /* Definir posição relativa para que o vídeo possa ser posicionado */
+        width: 100%; /* Definir a largura para ocupar 100% do contêiner */
+        height: auto; /* Definir a altura para se ajustar automaticamente */
+        margin-left: 55px;
+        margin-top: -270px;
+    }
+    #conteudo video {
+        width: 100%; /* Definir a largura para ocupar 100% do contêiner */
+        height: auto; /* Definir a altura para se ajustar automaticamente */
+        position: relative; /* Definir posição relativa */
+        z-index: 1; /* Definir o índice z para garantir que o vídeo não se sobreponha a outros elementos */
+        margin-top: 95px;
+    }
+    
+    
+    form {
+        background-color:var(--cinzaTexto);
+        padding: 20px;
+        border-radius: 50px;
+        box-shadow: rgb(156, 156, 156) 0px 3px 8px;
+        margin-top: -220px;
+      }
+      .Container9 h2{
+        margin-bottom: 230px;
+        font-size:4vh;
+        margin-left: 600px; 
+      }
+
+
+    main {
+        background: url(img/banner.jpg);
+        height: 65vh;
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+    }
+
+
+    .conteudo img {
+        display: flex;
+        width: auto;
+        border-radius: 20px;
+        height: 40vh;
+        margin: 0 25px 0 50px;
+        margin-right: 10vh;
+    }
+    .conteudo-texto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 0px;
+    }
+
+    .conteudo-texto h2 {
+        display: flex;
+        color: #000000;
+        text-align: left;
+        width: 1000px;
+        margin-left: 20px;
+        font-family: unset;
+        font-size: 25px;
+        margin-top: -200px;
+        
+    }
+
+    .Flex {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .button {
+        background-color: #000000;
+        transition: .5s;
+        color: rgb(255, 255, 255);
+        border-radius: 19px;
+        padding: 10px 30px;
+        font-size: 17px;
+        cursor: pointer;
+        text-decoration: none;
+        margin-left:370px;
+        margin-top: 0px;
+        
+    }
+
+    .button:hover {
+        transition: .5s;
+        background-color: #626262;
+    }
+
+    /* Layout */
+    .MiniBorda {
+        display: flex;
+
+        margin-top: auto;
+        max-width: 100%;
+        background-color: #1e1c1c;
+        padding: 50px 0;
+    }
+
+    .MiniBanner h2 {
+        text-align: center;
+        color: rgb(255, 255, 255);
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    .MiniBanner ul li {
+        width: 1200px;
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        font-family: sans-serif
+    }
+
+    .Container {
+        max-width: 100%;
+    }
+
+    .Banner {
+        position: absolute;
+        display: block;
+        bottom: 391px;
+        background: rgba(0, 0, 0, 0.7);
+        width: 100%;
+        height: 200px;
+        margin-bottom: 42px;
+    }
+
+    /* Cabeçalho */
+    header {
+        max-width: 100%;
+        height: 125px;
+        background-color: chocolate;
+    }
+
+    .Card img {
+        border-radius: 25px 25px 0px 0px;
+        width: 30px;
+        height: 315px;
+        margin-left: -0.1vh;
+        margin-top: -0.1vh;
+    }
+
+    #logo img {
+        width: 424px;
+        height: 97.4px;
+    }
+
+    label {
+        display: none;
+    }
+
+    nav ul {
+        width: 100%;
+        position: static;
+        height: auto;
+        background-color: var(--brancoLayout);
+        margin-top: 50px;
+    }
+
+    nav ul li {
+        border: 0;
+        float: left;
+    }
+
+    nav ul li a {
+        color: #ffffff;
+    }
+
+    nav ul li a:hover {
+        color: rgb(255, 0, 0);
+    }
+    #textoSobre h2{
+        margin-left: 24px;
+        font-size: 1.5em;
+        margin-top: 260px;
+        
+    }
+    #textoSobre p{
+        font-size: 1.4em;
+        width:400px;
+        
+        
+    }
+    /* Banner */
+    main h1 {
+        font-size: 2em;
+    }
+}
+
+/* PCs, notebooks ou Tv Full HD + >>>> */
+@media (min-width: 1400px)
+{
+
+    /* Cabeçalho */
+    header {
+        height: 100%;
+        background: var(--pretoLayout);
+    }
+
+    #logo img {
+        width: 60px;
+        height: 50px;
+    }
+}
